@@ -22,3 +22,5 @@ def ecommerce(request):
     return render(request, 'ecommerce.html')
 def tours(request):
     return render(request, 'tours.html')
+def about(request):
+    return render(request, 'about.html')

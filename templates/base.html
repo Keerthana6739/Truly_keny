@@ -12,6 +12,7 @@
   <!-- Favicons -->
   <link href="{% static 'assets/img/favicon.png" rel="icon'%}">
   <link href="{% static 'assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -29,7 +30,7 @@
   <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: KnightOne
+  * Template Name: TrulyKenya
   * Template URL: https://bootstrapmade.com/knight-simple-one-page-bootstrap-template/
   * Updated: Oct 16 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
@@ -97,10 +98,11 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-            <li><a href="{% url 'index' %}#hero" class="active">Home</a></li>
-
+          <li><a href="{% url 'index' %}#hero" class="active">Home</a></li>
           <li><a href="{% url 'index' %}#about">About</a></li>
-          <li class="dropdown"><a href="#services"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          
+          <li class="dropdown">
+            <a href="#services"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="{% url 'digital' %}">Digital</a></li>
               <li><a href="{% url 'satellite' %}">Satellite WiFi</a></li>
@@ -113,15 +115,13 @@
               <li><a href="{% url 'ecommerce' %}">eCommerce Platform</a></li>
             </ul>
           </li>
-          <!-- <li><a href="#services">Services</a></li> -->
+      
           <li><a href="{% url 'index' %}#mission">Mission</a></li>
           <li><a href="{% url 'index' %}#vision">Vision</a></li>
-         
-         
           <li><a href="{% url 'index' %}#contact">Contact</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+      
 
       <a class="cta-btn" href="#about">Get Started</a>
 
@@ -133,25 +133,26 @@
 
   <footer id="footer" class="footer dark-background">
     <div class="container">
-      <h3 class="sitename">KnightOne</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <h3 class="sitename">TrulyKenya</h3>
+      <p>One Truly Kenya, One Unified Experience
+      </p>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a> -->
+        <a href="https://www.instagram.com/trulykenya.ke/?igsh=MXhmMDQzYnBodmhrYQ%3D%3D#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/truly-kenya-ltd-84248635b/"><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="container">
         <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">KnightOne</strong> <span>All Rights Reserved</span>
+          <span>Copyright</span> <strong class="px-1 sitename">TrulyKenya</strong> <span>All Rights Reserved</span>
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
           <!-- You can delete the links only if you've purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
+          Designed by <a href="https://www.bharathbrands.in/">Bharathbrands</a>
         </div>
       </div>
     </div>
@@ -175,56 +176,54 @@
 
   <!-- Main JS File -->
   <script src="{% static 'assets/js/main.js' %}"></script>
-<script>
-  
-  document.addEventListener('DOMContentLoaded', function() {
-  const navLinks = document.querySelectorAll('#navmenu a');
-  const currentPath = window.location.pathname;
-  
-  // 1. Remove all active classes first
-  navLinks.forEach(link => link.classList.remove('active'));
-  
-  // 2. Check if current page is a dropdown child
-  let activeDropdownParent = null;
-  
-  navLinks.forEach(link => {
-    if (link.getAttribute('href') === currentPath) {
-      link.classList.add('active');
-      
-      // If this link is inside a dropdown
-      const dropdownParent = link.closest('.dropdown');
-      if (dropdownParent) {
-        // Also activate the dropdown's main <a> tag
-        dropdownParent.querySelector('> a').classList.add('active');
-        activeDropdownParent = dropdownParent;
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const navLinks = document.querySelectorAll('#navmenu a');
+      const currentPath = window.location.pathname;
+    
+      // Clear all existing active classes
+      navLinks.forEach(link => link.classList.remove('active'));
+    
+      // Set active class for current link
+      navLinks.forEach(link => {
+        const linkHref = link.getAttribute('href');
+    
+        // Match full path or base path (in case of trailing slashes)
+        if (linkHref === currentPath || linkHref === currentPath + '/') {
+          link.classList.add('active');
+    
+          // If it's inside a dropdown, make parent also active
+          const dropdown = link.closest('.dropdown');
+          if (dropdown) {
+            const parentLink = dropdown.querySelector('a[href="#services"]');
+            if (parentLink) parentLink.classList.add('active');
+          }
+        }
+      });
+    
+      // Special case for homepage anchor
+      if (currentPath === "{% url 'index' %}") {
+        const homeLink = document.querySelector('#navmenu a[href="{% url 'index' %}#hero"]');
+        if (homeLink) homeLink.classList.add('active');
       }
-    }
-  });
-  
-  // 3. Special case for homepage (hero section)
-  if (currentPath === "{% url 'index' %}") {
-    const heroLink = document.querySelector('#navmenu a[href="{% url 'index' %}#hero"]');
-    if (heroLink) heroLink.classList.add('active');
-  }
-  
-  // 4. Click handler to keep dropdown parent active
-  navLinks.forEach(link => {
-    link.addEventListener('click', function() {
-      // Remove active class from all
-      navLinks.forEach(l => l.classList.remove('active'));
-      
-      // Add to clicked link
-      this.classList.add('active');
-      
-      // If clicked link is in a dropdown, activate parent too
-      const dropdownParent = this.closest('.dropdown');
-      if (dropdownParent) {
-        dropdownParent.querySelector('> a').classList.add('active');
-      }
+    
+      // Add click event to maintain active class dynamically
+      navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+          navLinks.forEach(l => l.classList.remove('active'));
+          this.classList.add('active');
+    
+          const dropdown = this.closest('.dropdown');
+          if (dropdown) {
+            const parentLink = dropdown.querySelector('a[href="#services"]');
+            if (parentLink) parentLink.classList.add('active');
+          }
+        });
+      });
     });
-  });
-});
-</script>
+    </script>
+    
+    
 </body>
 
 </html>
