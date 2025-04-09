@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body_block %}
+<style>
+  .custom-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .custom-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  }
+</style>
+
+<main class="main">
+     <!-- Hero Section -->
+  <section  class="sec section dark-background">
+
+   <h1 class="mt-5">Truly Kenya Gaming</h1>
+  </section><!-- /Hero Section -->
+  <section class="container">
+
+<div class=" section-title" data-aos="fade-up">
+    
+    <h2>Truly Kenya Gaming</h2>
+  </div>
+<p>Level up your fun with Truly Kenya Gaming, a one-stop gaming platform for the Kenyan community. Whether you're a casual gamer or an e-sports enthusiast, we've got you covered. Play a variety of games right through the app – from puzzles and trivia to sports and adventure – or watch live streams of gaming events featuring Kenyan talent. Truly Kenya Gaming is where competition meets community, bringing together players from all over the country (and our diaspora) to connect and compete.
+</p>
+
+   </section>
+   <section class="container">
+
+    <div class=" section-title" data-aos="fade-up">
+        
+        <h2>Why Truly Kenya Gaming?</h2>
+      </div>
+      <div class="row">
+      <div class="col-md-8">
+    <p>Because gaming is more fun when it's shared. Our platform is designed to nurture a vibrant gaming culture in Kenya. Challenge your friends or make new ones in multiplayer matches and tournaments. Climb the leaderboards to earn recognition, and take part in special events or e-sport competitions with real prizes up for grabs. We also spotlight Kenyan game developers and local content, giving homegrown games a place to shine. It's entertainment, community, and opportunity rolled into one.
+    
+  </div>
+  <div class="col-md-4 text-center">
+    <img src="{% static 'assets/img/why4.png' %}" 
+         class="custom-img" 
+         alt="Why Choose Us" 
+         data-aos="fade-in">
+  </div>
+</div>
+       </section>
+   <section class="services section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Key Features</h2>
+     
+      
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4 col-md-6  mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item  position-relative">
+            <div class="icon">
+              <i class="bi bi-controller"></i>
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>Diverse Game Library</h3>
+            </a>
+            <p class="mb-3">Enjoy a range of games – arcade, puzzle, sports, strategy, and more – accessible instantly without separate downloads.
+
+            </p>
+            
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6  mb-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="bi bi-puzzle"></i>
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>Multiplayer & Tournaments</h3>
+            </a>
+            <p class="mb-3">Play head-to-head with friends or enter nationwide tournaments. Win points, prizes, or bragging rights in events held regularly.
+
+            </p>
+            
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6  mb-5" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="bi bi-circle"></i>
+
+              
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>Live Streams & Esports</h3>
+            </a>
+            <p class="mb-3">Watch top players and gaming influencers stream matches live. Cheer on Kenyan e-sports teams and learn new tricks from experts.
+
+            </p>
+            
+          </div>
+        </div><!-- End Service Item -->
+</div>
+<div class="row justify-content-center">
+  <div class="col-lg-4 col-md-6 mb-5 " data-aos="fade-up" data-aos-delay="400">
+      <div class="service-item position-relative">
+          <div class="icon">
+              <i class="bi bi-easel"></i>
+          </div>
+          <a href="#" class="stretched-link">
+              <h3>Leaderboards & Achievements</h3>
+          </a>
+          <p class="mb-3">Track your scores, earn badges, and see how you rank against others across Kenya. Level up your profile as you play.
+        </p>
+      </div>
+  </div><!-- End Service Item -->
+  
+  <div class="col-lg-4 col-md-6 mb-5 " data-aos="fade-up" data-aos-delay="500">
+      <div class="service-item position-relative">
+          <div class="icon">
+              <i class="bi bi-link"></i>
+          </div>
+          <a href="#" class="stretched-link">
+              <h3>Developer Spotlight</h3>
+          </a>
+          <p class="mb-3">Discover indie games and innovations by Kenyan developers featured in the platform, supporting our local gaming industry.
+        </p>
+      </div>
+  </div><!-- End Service Item -->
+</div>
+
+
+
+    </div>
+
+  </section>
+  <div class="container my-5">
+    <div class="card text-center border-0 shadow-lg" style="border-radius: 12px; max-width: 800px; margin: 0 auto;">
+      <div class="card-body p-5">
+        <!-- Decorative element -->
+        <div class="mb-4" style="color: #009961;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-megaphone-fill" viewBox="0 0 16 16">
+            <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-11zm-1 .724c-2.067.95-4.539 1.481-7 1.656v6.237a25.222 25.222 0 0 1 1.088.085c2.053.204 4.038.668 5.912 1.56V3.224zm-8 7.841V4.934c-.68.027-1.399.043-2.008.053A2.02 2.02 0 0 0 0 7v2c0 1.106.896 1.996 1.994 2.009a68.14 68.14 0 0 1 .496.008 64 64 0 0 1 1.51.048zm1.39 1.081c.285.021.569.047.85.078l.253 1.69a1 1 0 0 1-.983 1.187h-.548a1 1 0 0 1-.916-.599l-1.314-2.48a65.81 65.81 0 0 1 1.692.064c.327.017.65.037.966.06z"/>
+          </svg>
+        </div>
+        
+        <!-- Main content -->
+        <h3 class="card-title mb-3" style="color: #009961; font-weight: 600;">Play Now </h3>
+        <p class="card-text mb-4" style="font-size: 1.1rem; color: #555;">
+            On <span style="color: #009961; font-weight: 600;">Truly Kenya Gaming</span> join the adventure and let the games begin!
+
+        </p>
+     
+        
+        <!-- Additional decorative elements -->
+        <div class="d-flex justify-content-center mt-4">
+          <div style="height: 4px; width: 60px; background: linear-gradient(to right, #009961, #d8e9a0); border-radius: 2px;"></div>
+        </div>
+      </div>
+    </div>
+</div>
+</main>
+{% endblock %}

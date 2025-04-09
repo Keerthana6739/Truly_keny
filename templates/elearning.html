@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body_block %}
+<style>
+  .custom-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .custom-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  }
+</style>
+
+<main class="main">
+     <!-- Hero Section -->
+  <section  class="sec section dark-background">
+
+   <h1 class="mt-5">eLearning Portal</h1>
+  </section><!-- /Hero Section -->
+  <section class="container">
+
+<div class=" section-title" data-aos="fade-up">
+    
+    <h2>eLearning Portal</h2>
+  </div>
+<p>Never stop learning with the Truly Kenya eLearning Portal – an educational app that opens doors for all Kenyans to gain knowledge and skills. We believe education should be accessible to everyone, so we've packed this portal with resources for students, professionals, and lifelong learners alike. Find courses on everything from the school curriculum (KCPE, KCSE materials) to vocational training, tech skills, languages, and even cultural heritage lessons. Whether you're catching up on classwork in Kisumu or learning Swahili from London, Truly Kenya keeps you on track.
+</p>
+
+   </section>
+   <section class="container">
+
+    <div class=" section-title" data-aos="fade-up">
+        
+        <h2>Why the eLearning Portal? </h2>
+      </div>
+      <div class="row">
+      <div class="col-md-8">
+    <p>Because empowering minds empowers the nation. Our eLearning platform lets you learn at your own pace, on your own schedule. Enjoy interactive video lessons, quizzes, and assignments that make learning engaging. Connect with qualified Kenyan tutors and mentors – including experts from our diaspora – for guidance and support. Earn certificates for completed courses that you can show off to employers or schools. It's a complete classroom experience, right on your device.
+</p>
+    
+  </div>
+  <div class="col-md-4">
+    <img src="{% static 'assets/img/why5.jpg' %}" 
+         class="custom-img" 
+         alt="Why Choose Us" 
+         data-aos="fade-in">
+  </div>
+</div>
+       </section>
+   <section class="services section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Key Features</h2>
+     
+      
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4 col-md-6  mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item  position-relative">
+            <div class="icon">
+              <i class="bi bi-mortarboard"></i>
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>Diverse Courses</h3>
+            </a>
+            <p class="mb-3">Access a broad range of courses and tutorials: academic subjects (Math, Science, History), professional development (IT, business, entrepreneurship), and personal enrichment (health, finance, languages).
+
+            </p>
+            
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6  mb-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="bi bi-bar-chart"></i>
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>Interactive Learning</h3>
+            </a>
+            <p class="mb-3">Watch video lectures, take practice quizzes, and participate in discussion forums. Our platform makes online learning active and enjoyable.
+
+
+            </p>
+            
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6  mb-5" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="bi bi-globe"></i>
+
+              
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>Local & Global Educators</h3>
+            </a>
+            <p class="mb-3">Learn from the best. Courses are taught by Kenyan teachers and industry experts, with guest instructors from the diaspora bringing global perspectives.
+            </p>
+            
+          </div>
+        </div><!-- End Service Item -->
+</div>
+<div class="row justify-content-center">
+  <div class="col-lg-4 col-md-6 mb-5 " data-aos="fade-up" data-aos-delay="400">
+      <div class="service-item position-relative">
+          <div class="icon">
+              <i class="bi bi-award"></i>
+          </div>
+          <a href="#" class="stretched-link">
+              <h3>Progress Tracking & Certification</h3>
+          </a>
+          <p class="mb-3">Keep track of your progress with dashboards and earn certificates or badges for completing courses and skills.
+        </p>
+      </div>
+  </div><!-- End Service Item -->
+  
+  <div class="col-lg-4 col-md-6 mb-5 " data-aos="fade-up" data-aos-delay="500">
+      <div class="service-item position-relative">
+          <div class="icon">
+              <i class="bi bi-heart-pulse"></i>
+          </div>
+          <a href="#" class="stretched-link">
+              <h3>Youth & Adult Programs</h3>
+          </a>
+          <p class="mb-3">Resources for all ages – from revision material for pupils and students to career advancement courses for working adults.
+        </p>
+      </div>
+  </div><!-- End Service Item -->
+</div>
+
+
+
+    </div>
+
+  </section>
+  <div class="container my-5">
+    <div class="card text-center border-0 shadow-lg" style="border-radius: 12px; max-width: 800px; margin: 0 auto;">
+      <div class="card-body p-5">
+        <!-- Decorative element -->
+        <div class="mb-4" style="color: #009961;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-megaphone-fill" viewBox="0 0 16 16">
+            <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-11zm-1 .724c-2.067.95-4.539 1.481-7 1.656v6.237a25.222 25.222 0 0 1 1.088.085c2.053.204 4.038.668 5.912 1.56V3.224zm-8 7.841V4.934c-.68.027-1.399.043-2.008.053A2.02 2.02 0 0 0 0 7v2c0 1.106.896 1.996 1.994 2.009a68.14 68.14 0 0 1 .496.008 64 64 0 0 1 1.51.048zm1.39 1.081c.285.021.569.047.85.078l.253 1.69a1 1 0 0 1-.983 1.187h-.548a1 1 0 0 1-.916-.599l-1.314-2.48a65.81 65.81 0 0 1 1.692.064c.327.017.65.037.966.06z"/>
+          </svg>
+        </div>
+        
+        <!-- Main content -->
+        <h3 class="card-title mb-3" style="color: #009961; font-weight: 600;">Start Learning  </h3>
+        <p class="card-text mb-4" style="font-size: 1.1rem; color: #555;">
+          With <span style="color: #009961; font-weight: 600;">Truly Kenya eLearning </span> unlock your potential and shape your future today.
+
+
+
+        </p>
+     
+        
+        <!-- Additional decorative elements -->
+        <div class="d-flex justify-content-center mt-4">
+          <div style="height: 4px; width: 60px; background: linear-gradient(to right, #009961, #d8e9a0); border-radius: 2px;"></div>
+        </div>
+      </div>
+    </div>
+</div>
+</main>
+{% endblock %}

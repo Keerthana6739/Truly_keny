@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body_block %}
+<style>
+  .custom-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .custom-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  }
+</style>
+
+<main class="main">
+     <!-- Hero Section -->
+  <section  class="sec section dark-background">
+
+   <h1 class="mt-5">Truly Kenya Digital</h1>
+  </section><!-- /Hero Section -->
+  <section class="container">
+
+<div class=" section-title" data-aos="fade-up">
+    
+    <h2>Truly Kenya Digital</h2>
+  </div>
+<p>Truly Kenya Digital is the heart of our platform – a homegrown social media and content hub made by Kenyans, for Kenyans. Here you can share your stories, videos, music, and ideas on Kenya’s first homegrown social network​. It's a vibrant online community where creativity and conversation thrive. Whether you're a student in Mombasa or a Kenyan living abroad, this is your space to connect with others, stay informed, and celebrate what it means to be Kenyan.</p>
+
+   </section>
+   <section class="container">
+
+    <div class=" section-title" data-aos="fade-up">
+        
+        <h2>Why Choose us ?</h2>
+      </div>
+      <div class="row">
+      <div class="col-md-8">
+    <p>Why Truly Kenya Digital? It's not just about socializing – it's about opportunity. Content creators can earn a real income through fair content monetization: our model lets you keep up to 70% of the revenue your content generates​ far more than typical platforms.
+    </p>
+    <p>And for everyone else, engaging with content can be rewarding too. Watch brief Educational Ads (EduAds) that teach useful tips and get rewarded for watching – you can even earn money each month just by viewing sponsored content​. Truly Kenya Digital turns your social media time into a chance to learn, earn, and shine.
+    </p>
+  </div>
+  <div class="col-md-4">
+    <img src="{% static 'assets/img/why-1.jpg' %}" 
+         class="custom-img" 
+         alt="Why Choose Us" 
+         data-aos="fade-in">
+  </div>
+</div>
+       </section>
+   <section class="services section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Key Features</h2>
+     
+      
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4 col-md-6  mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item  position-relative">
+            <div class="icon">
+              <i class="bi bi-activity"></i>
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>Kenya Social Network</h3>
+            </a>
+            <p class="mb-3">Connect with friends, follow trending local topics, and join communities on a platform built exclusively for Kenyans.
+            </p>
+            
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6  mb-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="bi bi-pen"></i>
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>Content Monetization</h3>
+            </a>
+            <p class="mb-3">Share videos, blogs, and art – and earn from your creativity with a generous revenue share (keep up to 70% of what you earn)​.
+
+            </p>
+            
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6  mb-5" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="bi bi-trophy"></i>
+
+              
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>EduAds & Rewards</h3>
+            </a>
+            <p class="mb-3">A music streaming app for Kenyan and global tunes, supporting local artists.Watch short educational ads that not only inform you but also reward you for your time​. Earn points or cash for engaging with content.
+            </p>
+            
+          </div>
+        </div><!-- End Service Item -->
+</div>
+<div class="row justify-content-center">
+  <div class="col-lg-4 col-md-6 mb-5 " data-aos="fade-up" data-aos-delay="400">
+      <div class="service-item position-relative">
+          <div class="icon">
+              <i class="bi bi-hand-thumbs-up"></i>
+          </div>
+          <a href="#" class="stretched-link">
+              <h3>Creator Support</h3>
+          </a>
+          <p class="mb-3">Tools and analytics for content creators, plus a built-in audience eager for Kenyan-made content.</p>
+      </div>
+  </div><!-- End Service Item -->
+  
+  <div class="col-lg-4 col-md-6 mb-5 " data-aos="fade-up" data-aos-delay="500">
+      <div class="service-item position-relative">
+          <div class="icon">
+              <i class="bi bi-link"></i>
+          </div>
+          <a href="#" class="stretched-link">
+              <h3>Diaspora Engagement</h3>
+          </a>
+          <p class="mb-3">A special welcome for Kenyans abroad to share their experiences and stay connected to local trends.</p>
+      </div>
+  </div><!-- End Service Item -->
+</div>
+
+
+
+    </div>
+
+  </section>
+  <div class="container my-5">
+    <div class="card text-center border-0 shadow-lg" style="border-radius: 12px; max-width: 800px; margin: 0 auto;">
+      <div class="card-body p-5">
+        <!-- Decorative element -->
+        <div class="mb-4" style="color: #009961;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-megaphone-fill" viewBox="0 0 16 16">
+            <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-11zm-1 .724c-2.067.95-4.539 1.481-7 1.656v6.237a25.222 25.222 0 0 1 1.088.085c2.053.204 4.038.668 5.912 1.56V3.224zm-8 7.841V4.934c-.68.027-1.399.043-2.008.053A2.02 2.02 0 0 0 0 7v2c0 1.106.896 1.996 1.994 2.009a68.14 68.14 0 0 1 .496.008 64 64 0 0 1 1.51.048zm1.39 1.081c.285.021.569.047.85.078l.253 1.69a1 1 0 0 1-.983 1.187h-.548a1 1 0 0 1-.916-.599l-1.314-2.48a65.81 65.81 0 0 1 1.692.064c.327.017.65.037.966.06z"/>
+          </svg>
+        </div>
+        
+        <!-- Main content -->
+        <h3 class="card-title mb-3" style="color: #1e5128; font-weight: 600;">Sign Up Now</h3>
+        <p class="card-text mb-4" style="font-size: 1.1rem; color: #555;">
+          Join the <span style="color: #009961; font-weight: 600;">Truly Kenya Digital</span> community and start sharing your story!
+        </p>
+     
+        
+        <!-- Additional decorative elements -->
+        <div class="d-flex justify-content-center mt-4">
+          <div style="height: 4px; width: 60px; background: linear-gradient(to right, #009961, #d8e9a0); border-radius: 2px;"></div>
+        </div>
+      </div>
+    </div>
+</div>
+</main>
+{% endblock %}

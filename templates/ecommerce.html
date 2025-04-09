@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body_block %}
+<style>
+  .custom-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .custom-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  }
+</style>
+
+<main class="main">
+     <!-- Hero Section -->
+  <section  class="sec section dark-background">
+
+   <h1 class="mt-5">eCommerce Platform
+</h1>
+  </section><!-- /Hero Section -->
+  <section class="container">
+
+<div class=" section-title" data-aos="fade-up">
+    
+    <h2>eCommerce Platform
+</h2>
+  </div>
+<p>Shop Kenyan, support Kenyan. The Truly Kenya eCommerce platform is your marketplace for everything Kenyan. We've brought together local businesses, artisans, and major retailers into one online bazaar that's open 24/7. Browse and buy a wide range of products – fashion, electronics, groceries, home goods, handmade crafts, and more – right from your phone. It's never been easier to find what you need and have it delivered to your doorstep, whether you live in Nairobi or New York.
+
+</p>
+
+   </section>
+   <section class="container">
+
+    <div class=" section-title" data-aos="fade-up">
+        
+        <h2>Why Truly Kenya eCommerce? </h2>
+      </div>
+      <div class="row">
+      <div class="col-md-8">
+    <p>Because buying local builds our economy and bridges communities. Our platform is designed to empower small businesses by giving them a broader reach. For shoppers, it means convenience and variety like never before. Compare products, read reviews, and snag the best deals all in one place. We leverage secure payment systems (including M-Pesa integration and credit cards) so transactions are smooth and trustworthy. If you're a Kenyan abroad, you can even purchase items for your family back home or get authentic Kenyan products shipped to you overseas. It's shopping with purpose and ease.
+    </p>
+  </div>
+  <div class="col-md-4">
+    <img src="{% static 'assets/img/why8.webp' %}" 
+         class="custom-img" 
+         alt="Why Choose Us" 
+         data-aos="fade-in">
+  </div>
+</div>
+       </section>
+   <section class="services section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Key Features</h2>
+     
+      
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4 col-md-6  mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item  position-relative">
+            <div class="icon">
+              <i class="bi bi-cart-check"></i>
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>Vast Product Selection</h3>
+            </a>
+            <p class="mb-3">Discover thousands of products across categories – from Kenyan coffee and Maasai beadwork to the latest smartphones and appliances.
+
+            </p>
+            
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6  mb-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="bi bi-shop"></i>
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>Support Local Sellers</h3>
+            </a>
+            <p class="mb-3">Every purchase helps Kenyan entrepreneurs, farmers, and creators grow. Shop from verified vendors and emerging brands proudly made in Kenya.
+            </p>
+            
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6  mb-5" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="bi bi-shield-lock"></i>
+
+              
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>Secure Payments</h3>
+            </a>
+            <p class="mb-3">Pay confidently using methods you trust. We support mobile money, bank cards, and our unified Truly Kenya wallet with robust security measures.
+
+            </p>
+            
+          </div>
+        </div><!-- End Service Item -->
+</div>
+<div class="row justify-content-center">
+  <div class="col-lg-4 col-md-6 mb-5 " data-aos="fade-up" data-aos-delay="400">
+      <div class="service-item position-relative">
+          <div class="icon">
+              <i class="bi bi-truck"></i>
+          </div>
+          <a href="#" class="stretched-link">
+              <h3>Reliable Delivery</h3>
+          </a>
+          <p class="mb-3">Get your orders fulfilled quickly through our network of delivery partners. Track your package in real time and enjoy hassle-free shipping, locally and internationally.
+
+        </p>
+      </div>
+  </div><!-- End Service Item -->
+  
+  <div class="col-lg-4 col-md-6 mb-5 " data-aos="fade-up" data-aos-delay="500">
+      <div class="service-item position-relative">
+          <div class="icon">
+              <i class="bi bi-link"></i>
+          </div>
+          <a href="#" class="stretched-link">
+              <h3>Easy Returns & Support</h3>
+          </a>
+          <p class="mb-3">Customer satisfaction is key. If something isn't right, our customer service and easy return policy have you covered, ensuring you shop with peace of mind.
+
+        </p>
+      </div>
+  </div><!-- End Service Item -->
+</div>
+
+
+
+    </div>
+
+  </section>
+  <div class="container my-5">
+    <div class="card text-center border-0 shadow-lg" style="border-radius: 12px; max-width: 800px; margin: 0 auto;">
+      <div class="card-body p-5">
+        <!-- Decorative element -->
+        <div class="mb-4" style="color: #009961;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-megaphone-fill" viewBox="0 0 16 16">
+            <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-11zm-1 .724c-2.067.95-4.539 1.481-7 1.656v6.237a25.222 25.222 0 0 1 1.088.085c2.053.204 4.038.668 5.912 1.56V3.224zm-8 7.841V4.934c-.68.027-1.399.043-2.008.053A2.02 2.02 0 0 0 0 7v2c0 1.106.896 1.996 1.994 2.009a68.14 68.14 0 0 1 .496.008 64 64 0 0 1 1.51.048zm1.39 1.081c.285.021.569.047.85.078l.253 1.69a1 1 0 0 1-.983 1.187h-.548a1 1 0 0 1-.916-.599l-1.314-2.48a65.81 65.81 0 0 1 1.692.064c.327.017.65.037.966.06z"/>
+          </svg>
+        </div>
+        
+        <!-- Main content -->
+        <h3 class="card-title mb-3" style="color: #009961; font-weight: 600;">Shop Now </h3>
+        <p class="card-text mb-4" style="font-size: 1.1rem; color: #555;">
+          On <span style="color: #009961; font-weight: 600;">Truly Kenya eCommerce</span> find what you love while supporting the nation.
+
+
+        </p>
+     
+        
+        <!-- Additional decorative elements -->
+        <div class="d-flex justify-content-center mt-4">
+          <div style="height: 4px; width: 60px; background: linear-gradient(to right, #009961, #d8e9a0); border-radius: 2px;"></div>
+        </div>
+      </div>
+    </div>
+</div>
+</main>
+{% endblock %}

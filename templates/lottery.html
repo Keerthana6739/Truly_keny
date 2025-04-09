@@ -1,0 +1,180 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body_block %}
+<style>
+  .custom-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .custom-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  }
+</style>
+
+<main class="main">
+     <!-- Hero Section -->
+  <section  class="sec section dark-background">
+
+   <h1 class="mt-5">Lottery App</h1>
+  </section><!-- /Hero Section -->
+  <section class="container">
+
+<div class=" section-title" data-aos="fade-up">
+    
+    <h2>Lottery App</h2>
+  </div>
+<p>Try your luck and have fun with the Truly Kenya Lottery – a digital lottery experience integrated right into our super app. No more paper tickets or long queues; now you can participate in exciting draws with just a few taps on your phone. Whether you're feeling lucky on your morning commute or enjoying a quiet evening at home, the lottery is always at your fingertips. It's a thrilling way to dream big, and maybe even win big, as part of your daily Truly Kenya routine.
+
+</p>
+
+   </section>
+   <section class="container">
+
+    <div class=" section-title" data-aos="fade-up">
+        
+        <h2>Why Play the Truly Kenya Lottery?  </h2>
+      </div>
+      <div class="row">
+      <div class="col-md-8">
+    <p>Because we've made it effortless and rewarding. Buy tickets securely through the app using your Truly Kenya wallet or mobile money – it's quick and safe. Choose your numbers or use a random quick-pick, and then sit back and await the results. Our draws are transparent and fair, with winners notified instantly through the app. You'll get alerts if you've won a prize, and any winnings can be claimed or deposited directly to you. Plus, by playing with us, you're participating in a community-driven game where a portion of proceeds may go towards supporting community initiatives (so you can feel good even when you don't hit the jackpot!).
+    </p>
+    
+  </div>
+  <div class="col-md-4">
+    <img src="{% static 'assets/img/why6.webp' %}" 
+         class="custom-img" 
+         alt="Why Choose Us" 
+         data-aos="fade-in">
+  </div>
+</div>
+       </section>
+   <section class="services section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Key Features</h2>
+     
+      
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4 col-md-6  mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item  position-relative">
+            <div class="icon">
+              <i class="bi bi-cash-stack"></i>
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>Digital Tickets</h3>
+            </a>
+            <p class="mb-3">Purchase lottery tickets anytime, anywhere within the app – no physical ticket needed. Your entries are safely stored in your account.
+
+
+            </p>
+            
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6  mb-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="bi bi-shield-lock"></i>
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>Secure Transactions</h3>
+            </a>
+            <p class="mb-3">All payments and payouts are handled through secure, trusted channels (your integrated wallet, M-Pesa, etc.), giving you peace of mind.
+
+
+
+            </p>
+            
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6  mb-5" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="bi bi-trophy"></i>
+
+              
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>Quick Results</h3>
+            </a>
+            <p class="mb-3">: Never miss a draw. Get real-time results and instant notifications if you win, so you can celebrate without delay.
+
+            </p>
+            
+          </div>
+        </div><!-- End Service Item -->
+</div>
+<div class="row justify-content-center">
+  <div class="col-lg-4 col-md-6 mb-5 " data-aos="fade-up" data-aos-delay="400">
+      <div class="service-item position-relative">
+          <div class="icon">
+              <i class="bi bi-controller"></i>
+          </div>
+          <a href="#" class="stretched-link">
+              <h3>Multiple Games</h3>
+          </a>
+          <p class="mb-3">Take part in various lottery games or raffles we offer, increasing your chances for fun and rewards.
+        </p>
+      </div>
+  </div><!-- End Service Item -->
+  
+  <div class="col-lg-4 col-md-6 mb-5 " data-aos="fade-up" data-aos-delay="500">
+      <div class="service-item position-relative">
+          <div class="icon">
+              <i class="bi bi-link"></i>
+          </div>
+          <a href="#" class="stretched-link">
+              <h3>Community Impact</h3>
+          </a>
+          <p class="mb-3">A portion of lottery proceeds is earmarked for social good in Kenya, meaning every ticket contributes to a greater cause.
+
+        </p>
+      </div>
+  </div><!-- End Service Item -->
+</div>
+
+
+
+    </div>
+
+  </section>
+  <div class="container my-5">
+    <div class="card text-center border-0 shadow-lg" style="border-radius: 12px; max-width: 800px; margin: 0 auto;">
+      <div class="card-body p-5">
+        <!-- Decorative element -->
+        <div class="mb-4" style="color: #009961;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-megaphone-fill" viewBox="0 0 16 16">
+            <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-11zm-1 .724c-2.067.95-4.539 1.481-7 1.656v6.237a25.222 25.222 0 0 1 1.088.085c2.053.204 4.038.668 5.912 1.56V3.224zm-8 7.841V4.934c-.68.027-1.399.043-2.008.053A2.02 2.02 0 0 0 0 7v2c0 1.106.896 1.996 1.994 2.009a68.14 68.14 0 0 1 .496.008 64 64 0 0 1 1.51.048zm1.39 1.081c.285.021.569.047.85.078l.253 1.69a1 1 0 0 1-.983 1.187h-.548a1 1 0 0 1-.916-.599l-1.314-2.48a65.81 65.81 0 0 1 1.692.064c.327.017.65.037.966.06z"/>
+          </svg>
+        </div>
+        
+        <!-- Main content -->
+        <h3 class="card-title mb-3" style="color: #1e5128; font-weight: 600;">Try Your Luck</h3>
+        <p class="card-text mb-4" style="font-size: 1.1rem; color: #555;">
+            With <span style="color: #009961; font-weight: 600;">Truly Kenya Lottery </span> play today and imagine the possibilities!
+
+        </p>
+     
+        
+        <!-- Additional decorative elements -->
+        <div class="d-flex justify-content-center mt-4">
+          <div style="height: 4px; width: 60px; background: linear-gradient(to right, #009961, #d8e9a0); border-radius: 2px;"></div>
+        </div>
+      </div>
+    </div>
+</div>
+</main>
+{% endblock %}

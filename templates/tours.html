@@ -1,0 +1,180 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body_block %}
+<style>
+  .custom-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .custom-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  }
+</style>
+
+<main class="main">
+     <!-- Hero Section -->
+  <section  class="sec section dark-background">
+
+   <h1 class="mt-5">Virtual Tours & Safari Parks
+</h1>
+  </section><!-- /Hero Section -->
+  <section class="container">
+
+<div class=" section-title" data-aos="fade-up">
+    
+    <h2>Virtual Tours & Safari Parks
+</h2>
+  </div>
+<p>Explore Kenya's wonders from anywhere in the world with Truly Kenya Virtual Tours. Can't make it to the Maasai Mara this year? No problem – we'll bring the safari to you. Our virtual tourism feature lets you embark on breathtaking journeys through Kenya's national parks, iconic landscapes, and cultural landmarks, all through your device. It's perfect for those planning a trip, educating kids about our wildlife, or for diaspora Kenyans yearning for a taste of home. You can almost feel the savannah breeze as you watch elephants graze at sunset or take a guided tour of historical sites in Nairobi.
+
+</p>
+
+   </section>
+   <section class="container">
+
+    <div class=" section-title" data-aos="fade-up">
+        
+        <h2>Why Virtual Tours? </h2>
+      </div>
+      <div class="row">
+      <div class="col-md-8">
+    <p>Because Kenya's beauty deserves to be experienced by all, without limits. With Truly Kenya's virtual tours, you get high-quality 360° panoramas, live camera feeds, and interactive guides at your fingertips. Enjoy narrated tours by expert guides who share fascinating facts about our wildlife and heritage. Switch between different parks and sites – one minute you're at Amboseli watching elephants by Mt. Kilimanjaro, the next you're diving into the coral reefs of Watamu Marine Park, all from the comfort of your home. It's not just sightseeing; it's about fostering appreciation for Kenya's natural and cultural treasures.
+</p>
+    
+  </div>
+  <div class="col-md-4">
+    <img src="{% static 'assets/img/why7.avif' %}" 
+         class="custom-img" 
+         alt="Why Choose Us" 
+         data-aos="fade-in">
+  </div>
+</div>
+       </section>
+   <section class="services section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Key Features</h2>
+     
+      
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4 col-md-6  mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item  position-relative">
+            <div class="icon">
+              <i class="bi bi-camera-video-fill"></i>
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>Immersive 360° Experiences</h3>
+            </a>
+            <p class="mb-3">Take virtual safaris in 360-degree view. Walk through Nairobi National Park, climb Mount Kenya, or roam the Maasai Mara, virtually as if you're there.
+
+
+            </p>
+            
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6  mb-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="bi bi-camera-video-live"></i>
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>Live Wildlife Cams</h3>
+            </a>
+            <p class="mb-3">Tune into live streams from select safari parks and reserves to see real-time wildlife action – lions, giraffes, zebras and more, in their natural habitat.
+
+
+            </p>
+            
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6  mb-5" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="bi bi-translate"></i>
+
+              
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>Guided Tours & Commentary</h3>
+            </a>
+            <p class="mb-3">Choose guided tour modes with audio commentary in English (and local languages) to learn about each location's history, animals, and culture as you explore.
+
+            </p>
+            
+          </div>
+        </div><!-- End Service Item -->
+</div>
+<div class="row justify-content-center">
+  <div class="col-lg-4 col-md-6 mb-5 " data-aos="fade-up" data-aos-delay="400">
+      <div class="service-item position-relative">
+          <div class="icon">
+              <i class="bi bi-journal-richtext"></i>
+          </div>
+          <a href="#" class="stretched-link">
+              <h3>Interactive Learning</h3>
+          </a>
+          <p class="mb-3">Click on points of interest to get more info, view photos, or take fun quizzes about Kenyan wildlife and heritage – great for students and curious minds.
+        </p>
+      </div>
+  </div><!-- End Service Item -->
+  
+  <div class="col-lg-4 col-md-6 mb-5 " data-aos="fade-up" data-aos-delay="500">
+      <div class="service-item position-relative">
+          <div class="icon">
+              <i class="bi bi-airplane-engines"></i>
+          </div>
+          <a href="#" class="stretched-link">
+              <h3>Plan Your Trip</h3>
+          </a>
+          <p class="mb-3">Like what you see? Save your favorite spots and get information on visiting them in person (nearby accommodations, travel tips, and deals) when you're ready to travel.
+</p>
+      </div>
+  </div><!-- End Service Item -->
+</div>
+
+
+
+    </div>
+
+  </section>
+  <div class="container my-5">
+    <div class="card text-center border-0 shadow-lg" style="border-radius: 12px; max-width: 800px; margin: 0 auto;">
+      <div class="card-body p-5">
+        <!-- Decorative element -->
+        <div class="mb-4" style="color: #009961;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-megaphone-fill" viewBox="0 0 16 16">
+            <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-11zm-1 .724c-2.067.95-4.539 1.481-7 1.656v6.237a25.222 25.222 0 0 1 1.088.085c2.053.204 4.038.668 5.912 1.56V3.224zm-8 7.841V4.934c-.68.027-1.399.043-2.008.053A2.02 2.02 0 0 0 0 7v2c0 1.106.896 1.996 1.994 2.009a68.14 68.14 0 0 1 .496.008 64 64 0 0 1 1.51.048zm1.39 1.081c.285.021.569.047.85.078l.253 1.69a1 1 0 0 1-.983 1.187h-.548a1 1 0 0 1-.916-.599l-1.314-2.48a65.81 65.81 0 0 1 1.692.064c.327.017.65.037.966.06z"/>
+          </svg>
+        </div>
+        
+        <!-- Main content -->
+        <h3 class="card-title mb-3" style="color: #009961; font-weight: 600;">Explore Now</h3>
+        <p class="card-text mb-4" style="font-size: 1.1rem; color: #555;">
+            With  <span style="color: #009961; font-weight: 600;">Truly Kenya Virtual Tours </span> adventure awaits at the click of a button.
+
+        </p>
+     
+        
+        <!-- Additional decorative elements -->
+        <div class="d-flex justify-content-center mt-4">
+          <div style="height: 4px; width: 60px; background: linear-gradient(to right, #009961, #d8e9a0); border-radius: 2px;"></div>
+        </div>
+      </div>
+    </div>
+</div>
+</main>
+{% endblock %}
